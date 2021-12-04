@@ -1,10 +1,10 @@
 import React from "react";
 import { CardWrapper, Subjectinfo, Info } from "./Card.style";
 
-const Card = () => {
+const Card = ({ subject }) => {
   return (
     <CardWrapper>
-      <h1>Physics</h1>
+      <h1>{subject}</h1>
       <Subjectinfo>
         <Info>Total Chapters</Info>
         <Info>Question : 317</Info>

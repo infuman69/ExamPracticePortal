@@ -10,6 +10,7 @@ export const CardWrapper = styled.div`
   align-items: center;
   border-radius: 6px;
   margin: 13px 30px;
+  color: white;
 `;
 export const Subjectinfo = styled.div`
   display: flex;
