@@ -6,11 +6,19 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   height: 400px;
   width: 350px;
-  background-color: blue;
+  background-color: #ae00fb;
   align-items: center;
   border-radius: 6px;
   margin: 13px 30px;
   color: white;
+  &:hover {
+    transform: translateY(-30px);
+    cursor: pointer;
+    box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 6px 20px -6px rgba(0, 0, 0, 0.75);
+    transition: 0.2s ease all;
+  }
 `;
 export const Subjectinfo = styled.div`
   display: flex;

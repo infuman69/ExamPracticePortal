@@ -1,8 +1,13 @@
 import React from "react";
 import Card from "../../Card";
+import { useHistory } from "react-router";
 
 const PhysicsCard = () => {
-  return <Card subject={"Physics"} />;
+  let history = useHistory();
+  const handleClick = () => {
+    history.push("/PhysicsPortal");
+  };
+  return <Card subject={"Physics"} handleClick={handleClick} />;
 };
 
 export default PhysicsCard;

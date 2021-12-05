@@ -6,9 +6,10 @@ export const CardCont = styled.div`
   justify-content: center;
   align-items: center;
   width: 1200px;
-  height: 600px;
-  color: #6e3cbc;
-
+  height: 75%;
+  color: #ffedda;
+  border-radius: 10px;
+  background-color: #344cb7;
   .conthead {
     margin: 10px 0;
   }
