@@ -1,9 +1,12 @@
 import React from "react";
+import PhysicsWrap from "../../components/PhysicsPortal/PhysicsWrap/PhysicsWrap";
+
 import { HomeWrapper } from "../Homepage/Homepage.style";
+
 const PhysicsPortal = () => {
   return (
     <HomeWrapper>
-      <h1>helloWorld</h1>
+      <PhysicsWrap />
     </HomeWrapper>
   );
 };
