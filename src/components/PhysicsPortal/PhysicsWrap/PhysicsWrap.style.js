@@ -10,7 +10,7 @@ export const PhysicsWrapper = styled.div`
     "chapters que    que    que    que    que   "
     "chapters que    que    que    que    que   "
     "chapters que    que    que    que    que   ";
-  width: 875px;
+
   height: 59%;
   border-radius: 10px;
   box-shadow: -2px 1px 12px 0px rgba(0, 0, 0, 0.75);

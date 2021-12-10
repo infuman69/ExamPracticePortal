@@ -14,7 +14,7 @@ const Chapters = () => {
           <h1>Magnetism </h1>{" "}
         </Chapname>
         <Chapname>
-          <h1>Electric Curren</h1>
+          <h1>Electric Current</h1>
         </Chapname>
         <Chapname>
           <h1>Modern Physics</h1>
