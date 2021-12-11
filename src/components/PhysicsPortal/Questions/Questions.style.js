@@ -18,3 +18,10 @@ export const Quesbox = styled.div`
   display: flex;
   align-items: center;
 `;
+export const Optbox = styled(Quesbox)`
+  cursor: pointer;
+`;
+export const Ansattemptbox = styled(Optbox)`
+  background-color: blue;
+  color: white;
+`;

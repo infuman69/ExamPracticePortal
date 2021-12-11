@@ -1,10 +1,10 @@
-export const Questions = [
+export const PhyQuestionsss = [
   {
     No: 1,
-    Questiontext:
-      "A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
+    Questiontext: "Find out the area of the rectangle",
     Options: ["293 m", "111 m", "91m", "182m"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 2,
@@ -17,6 +17,7 @@ export const Questions = [
       "at the highest position of the platform",
     ],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 3,
@@ -24,6 +25,7 @@ export const Questions = [
       "Time taken by sunlight to pass through a window of thickness 4 mm with refractive index 3/2, is",
     Options: ["2 × 10^-4 s", "2 × 10^4 s", "2 × 10^-11 s", "2 × 10^11 s"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 4,
@@ -36,6 +38,7 @@ export const Questions = [
       "Their angular displacement is the same.",
     ],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 5,
@@ -43,6 +46,7 @@ export const Questions = [
       "A copper bar of length 1 m and cross-sectional area 10 × 10-2 m2 has its one end maintained at 100oC by means of 0.4 kW electric heater. What is the temperature of the other end in steady state, given that the thermal conductivity of copper is 400 W/mK?",
     Options: ["60oC", "70oC", "80oC", "90oC"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 6,
@@ -50,6 +54,7 @@ export const Questions = [
       "If the heat of 110 J is added to a gaseous system, whose internal energy is 40 J, then the amount of external work done is",
     Options: ["180 J", "70 J", "110 J", "30 J"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 7,
@@ -57,6 +62,7 @@ export const Questions = [
       "A parachutist, after bailing out, falls 50 m without friction. When parachute opens, it retards at 2 ms-2. He reaches the ground with a speed of 3 ms-1. At what height did he bail out?",
     Options: ["293 m", "111 m", "91m", "182m"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 8,
@@ -64,6 +70,7 @@ export const Questions = [
       "A proton is projected with a velocity 107 ms-1 at right angles to a uniform magnetic field of induction 100 mT. The time in seconds taken by the proton to traverse 90o arc is Mass of proton = 1.65 × 10-27 kg and charge of proton = 1.6 × 10-19 C",
     Options: ["0.81 × 10-7", "1.62 × 10-7", "2.43 × 10-7", "3.24 × 10-7"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 9,
@@ -71,6 +78,7 @@ export const Questions = [
       "The mass and diameter of a planet are twice than that of the Earth. What will be the period of oscillation of a pendulum on this planet, if it is a second's pendulum on Earth?",
     Options: ["2", "√2", "1/√2", "2/√2"],
     attempted: false,
+    ansID: -1,
   },
   {
     No: 10,
@@ -78,5 +86,6 @@ export const Questions = [
       "In which of the following instruments is zero error not taken into account for measurements?",
     Options: [" Slide callipers", "Screw gauge", "Spherometer", "Voltmeter"],
     attempted: false,
+    ansID: -1,
   },
 ];

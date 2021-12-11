@@ -16,4 +16,8 @@ export const Numbtn = styled.button`
   margin: 10px 0;
   color: white;
   font-size: 15px;
+  cursor: pointer;
+`;
+export const Attemptbtn = styled(Numbtn)`
+  background-color: blue;
 `;

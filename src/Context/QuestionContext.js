@@ -1,10 +1,12 @@
 import React, { createContext, useReducer } from "react";
-import { Questions } from "../data/data";
+import { MathQuestions } from "../data/MathData";
+import { PhyQuestionsss } from "../data/PhysicsData";
 import QuestionReducer from "./QuestionReducer";
 
 const intialState = {
-  PhyQuestions: [...Questions],
+  PhyQuestions: [...PhyQuestionsss],
   selected: 1,
+  subtype: "",
 };
 export const QuestionContext = createContext(intialState);
 const GlobalState = ({ children }) => {
@@ -15,6 +17,18 @@ const GlobalState = ({ children }) => {
       payload: quest,
     });
   };
+  const setattempted = (selec, ansID) => {
+    dispatch({
+      type: "SET_ATTEMPT",
+      payload: { select: selec, attemptans: ansID },
+    });
+  };
+  const setsubtype = (sub) => {
+    dispatch({
+      type: "SET_SUB",
+      payload: sub,
+    });
+  };
 
   return (
     <QuestionContext.Provider
@@ -22,6 +36,8 @@ const GlobalState = ({ children }) => {
         PhyQuestions: state.PhyQuestions,
         selected: state.selected,
         selecques,
+        setattempted,
+        setsubtype,
       }}
     >
       {children}
