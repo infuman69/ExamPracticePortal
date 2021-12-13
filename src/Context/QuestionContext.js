@@ -7,6 +7,7 @@ const intialState = {
   PhyQuestions: [...PhyQuestionsss],
   selected: 1,
   subtype: "",
+  attempted: 0,
 };
 export const QuestionContext = createContext(intialState);
 const GlobalState = ({ children }) => {
@@ -29,15 +30,23 @@ const GlobalState = ({ children }) => {
       payload: sub,
     });
   };
+  const setcountattempt = () => {
+    dispatch({
+      type: "SET_COUNT",
+      payload: 0,
+    });
+  };
 
   return (
     <QuestionContext.Provider
       value={{
         PhyQuestions: state.PhyQuestions,
         selected: state.selected,
+        attempted: state.attempted,
         selecques,
         setattempted,
         setsubtype,
+        setcountattempt,
       }}
     >
       {children}

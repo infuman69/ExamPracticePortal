@@ -1,4 +1,5 @@
 import { Setattempt } from "./Setattempt";
+import { Setcountattempt } from "./Setcountattempt";
 
 export default (state, action) => {
   switch (action.type) {
@@ -20,6 +21,11 @@ export default (state, action) => {
       return {
         ...state,
         subtype: action.payload,
+      };
+    case "SET_COUNT":
+      return {
+        ...state,
+        attempted: Setcountattempt(state.PhyQuestions),
       };
     default:
       return state;

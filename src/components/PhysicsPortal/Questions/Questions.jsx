@@ -3,7 +3,8 @@ import { QuestionContext } from "../../../Context/QuestionContext";
 import { Quewrap, Quesbox, Optbox, Ansattemptbox } from "./Questions.style";
 
 const Questions = () => {
-  let { PhyQuestions, selected, setattempted } = useContext(QuestionContext);
+  let { PhyQuestions, selected, setattempted, setcountattempt } =
+    useContext(QuestionContext);
 
   return (
     <Quewrap>
@@ -24,6 +25,7 @@ const Questions = () => {
           <Optbox
             onClick={() => {
               setattempted(selected, idx);
+              setcountattempt();
             }}
           >
             <p>{optext}</p>

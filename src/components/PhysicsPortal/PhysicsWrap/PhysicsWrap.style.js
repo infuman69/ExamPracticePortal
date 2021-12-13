@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
 export const PhysicsWrapper = styled.div`
   display: grid;
   grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr;

@@ -1,18 +1,22 @@
 import React from "react";
 import Chapters from "../Chapters/Chapters";
+import Progressbar from "../ProgressBar/Progressbar";
 import QuestionNum from "../QuestionNum/QuestionNum";
 import Questions from "../Questions/Questions";
-import { PhysicsWrapper } from "./PhysicsWrap.style";
+import { PhysicsWrapper, Wrapper } from "./PhysicsWrap.style";
 
 const PhysicsWrap = () => {
   return (
-    <PhysicsWrapper>
-      <Chapters />
+    <Wrapper>
+      <Progressbar />
+      <PhysicsWrapper>
+        <Chapters />
 
-      <QuestionNum />
+        <QuestionNum />
 
-      <Questions />
-    </PhysicsWrapper>
+        <Questions />
+      </PhysicsWrapper>
+    </Wrapper>
   );
 };
 
