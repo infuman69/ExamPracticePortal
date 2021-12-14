@@ -14,9 +14,11 @@ export const Numbtn = styled.button`
   height: 50px;
   width: 50px;
   margin: 10px 0;
+  border: 3px solid ${(props) => (props.clicked === "clicked" ? "red" : "blue")};
   color: white;
   font-size: 15px;
   cursor: pointer;
+  outline: none;
 `;
 export const Attemptbtn = styled(Numbtn)`
   background-color: blue;

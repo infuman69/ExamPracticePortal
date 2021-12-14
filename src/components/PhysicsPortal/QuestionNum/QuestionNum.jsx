@@ -3,7 +3,7 @@ import { QuestionContext } from "../../../Context/QuestionContext";
 import { QuestionNumWrap, Numbtn, Attemptbtn } from "./QuestionNum.style";
 
 const QuestionNum = () => {
-  let { PhyQuestions, selecques } = useContext(QuestionContext);
+  let { PhyQuestions, selecques, selected } = useContext(QuestionContext);
 
   return (
     <QuestionNumWrap>
@@ -16,8 +16,18 @@ const QuestionNum = () => {
           >
             {item.No}
           </Attemptbtn>
+        ) : item.No === selected ? (
+          <Numbtn
+            clicked="clicked"
+            onClick={() => {
+              selecques(item.No);
+            }}
+          >
+            {item.No}
+          </Numbtn>
         ) : (
           <Numbtn
+            clicked
             onClick={() => {
               selecques(item.No);
             }}

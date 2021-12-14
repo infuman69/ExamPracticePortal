@@ -14,8 +14,9 @@ const Progressbar = () => {
         percent={`${(attempted * 100) / PhyQuestions.length}`}
         strokewidth="8"
         trokeColor="red"
+        style={{ width: "50%" }}
       />
-      ;
+      {(attempted * 100) / PhyQuestions.length}% attempted
     </>
   );
 };

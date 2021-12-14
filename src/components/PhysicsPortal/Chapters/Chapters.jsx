@@ -10,15 +10,6 @@ const Chapters = () => {
           {" "}
           <h1>Work Power Energy </h1>{" "}
         </Chapname>
-        <Chapname>
-          <h1>Magnetism </h1>{" "}
-        </Chapname>
-        <Chapname>
-          <h1>Electric Current</h1>
-        </Chapname>
-        <Chapname>
-          <h1>Modern Physics</h1>
-        </Chapname>
       </ChapnameWrapper>
     </Chapterwrap>
   );

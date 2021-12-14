@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { QuestionContext } from "../Context/QuestionContext";
 import { CardWrapper, Subjectinfo, Info } from "./Card.style";
 
 const Card = ({ subject, handleClick }) => {
-  console.log(handleClick);
+  let { PhyQuestions } = useContext(QuestionContext);
   return (
     <CardWrapper onClick={handleClick}>
       <h1 className="Subjectname">{subject}</h1>
       <Subjectinfo>
         <Info>Total Chapters</Info>
-        <Info>Question : 317</Info>
+        <Info>Question : {PhyQuestions.length}</Info>
       </Subjectinfo>
     </CardWrapper>
   );
